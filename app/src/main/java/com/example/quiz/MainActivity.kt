@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             ll.visibility = VISIBLE
         }
         var i = 0
+        var sum = 0
             img_1.setOnClickListener(){
                 if(i == 0){
                     i++
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.oblomov)
                     img_2.setImageResource(R.drawable.uchitel)
                     img_3.setImageResource(R.drawable.alisa)
+                    sum++
                 }else if (i == 1){
                     i++
                     text_line.setText("В ворота гостиницы губернского города NN въехала довольно красивая рессорная небольшая бричка...")
@@ -52,6 +54,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.ostrov)
                     img_2.setImageResource(R.drawable.karenina)
                     img_3.setImageResource(R.drawable.uchitel)
+                    sum++
                 }else if (i == 3){
                     i++
                     text_line.setText("Однажды весною, в час небывало жаркого заката, в Москве, на Патриарших прудах, появились два гражданина.")
@@ -87,6 +90,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.harry)
                     img_2.setImageResource(R.drawable.dushi)
                     img_3.setImageResource(R.drawable.uchitel)
+                    sum++
                 }else if (i == 8){
                     i++
                     text_line.setText("– Еh bien, mon prince.")
@@ -96,7 +100,7 @@ class MainActivity : AppCompatActivity() {
                     img_3.setImageResource(R.drawable.harry)
                 }else if (i == 9){
                     i++
-                    answer.append("Вопрос №$i : Неверно\n")
+                    answer.append("Вопрос №$i : Неверно\nПравильно $sum из 10")
                     ll.visibility = GONE
                     text_line.visibility = GONE
                     answer.visibility = VISIBLE
@@ -120,7 +124,7 @@ class MainActivity : AppCompatActivity() {
                 }else if (i == 2){
                     i++
                     text_line.setText("Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива по-своему.")
-                    answer.append("Вопрос №$i : Неерно\n")
+                    answer.append("Вопрос №$i : Неверно\n")
                     img_1.setImageResource(R.drawable.ostrov)
                     img_2.setImageResource(R.drawable.karenina)
                     img_3.setImageResource(R.drawable.uchitel)
@@ -131,6 +135,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.prestuplenie)
                     img_2.setImageResource(R.drawable.dushi)
                     img_3.setImageResource(R.drawable.master)
+                    sum++
                 }else if (i == 4){
                     i++
                     text_line.setText("В Гороховой улице, в одном из больших домов, народонаселения которого стало бы на целый уездный город, лежал утром в постели, на своей квартире, Илья Ильич Обломов.")
@@ -145,6 +150,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.alisa)
                     img_2.setImageResource(R.drawable.ostrov)
                     img_3.setImageResource(R.drawable.prestuplenie)
+                    sum++
                 }else if (i == 6){
                     i++
                     text_line.setText("В начале июля, в чрезвычайно жаркое время, под вечер, один молодой человек вышел из своей каморки...")
@@ -152,6 +158,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.prestuplenie)
                     img_2.setImageResource(R.drawable.voina)
                     img_3.setImageResource(R.drawable.karenina)
+                    sum++
                 }else if (i == 7){
                     i++
                     text_line.setText("Я открываю настежь окна.")
@@ -168,7 +175,8 @@ class MainActivity : AppCompatActivity() {
                     img_3.setImageResource(R.drawable.harry)
                 }else if (i == 9){
                     i++
-                    answer.append("Вопрос №$i : Верно\n")
+                    sum++
+                    answer.append("Вопрос №$i : Верно\nПравильно $sum из 10")
                     ll.visibility = GONE
                     text_line.visibility = GONE
                     answer.visibility = VISIBLE
@@ -189,10 +197,11 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.dushi)
                     img_2.setImageResource(R.drawable.harry)
                     img_3.setImageResource(R.drawable.master)
+                    sum++
                 }else if (i == 2){
                     i++
                     text_line.setText("Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива по-своему.")
-                    answer.append("Вопрос №$i : Неерно\n")
+                    answer.append("Вопрос №$i : Неверно\n")
                     img_1.setImageResource(R.drawable.ostrov)
                     img_2.setImageResource(R.drawable.karenina)
                     img_3.setImageResource(R.drawable.uchitel)
@@ -210,6 +219,7 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.ostrov)
                     img_2.setImageResource(R.drawable.oblomov)
                     img_3.setImageResource(R.drawable.voina)
+                    sum++
                 }else if (i == 5){
                     i++
                     text_line.setText("— Мы поднимаемся?")
@@ -238,9 +248,10 @@ class MainActivity : AppCompatActivity() {
                     img_1.setImageResource(R.drawable.oblomov)
                     img_2.setImageResource(R.drawable.voina)
                     img_3.setImageResource(R.drawable.harry)
+                    sum++
                 }else if (i == 9){
                     i++
-                    answer.append("Вопрос №$i : Неверно\n")
+                    answer.append("Вопрос №$i : Неверно\nПравильно $sum из 10")
                     ll.visibility = GONE
                     text_line.visibility = GONE
                     answer.visibility = VISIBLE

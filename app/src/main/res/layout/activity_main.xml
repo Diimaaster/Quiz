@@ -19,7 +19,7 @@
         android:layout_marginRight="20sp"
         android:fontFamily="@font/oswald"
         android:gravity="center_horizontal|top"
-        android:lineHeight="30sp"
+        android:lineHeight="40sp"
         android:lineSpacingExtra="-24sp"
         android:text="@string/match_the_c"
         android:textColor="#8BACFF"
@@ -56,22 +56,22 @@
 
         <ImageView
             android:id="@+id/img_1"
-            android:layout_width="250px"
-            android:layout_height="375px"
+            android:layout_width="200px"
+            android:layout_height="300px"
             android:layout_gravity="start"
             android:src="@drawable/harry" />
 
         <ImageView
             android:id="@+id/img_2"
-            android:layout_width="250px"
-            android:layout_height="375px"
+            android:layout_width="200px"
+            android:layout_height="300px"
             android:layout_gravity="center"
             android:src="@drawable/alisa" />
 
         <ImageView
             android:id="@+id/img_3"
-            android:layout_width="250px"
-            android:layout_height="375px"
+            android:layout_width="200px"
+            android:layout_height="300px"
             android:layout_gravity="end"
             android:src="@drawable/uchitel" />
 
